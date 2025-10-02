@@ -1,4 +1,5 @@
 import discord
+import os
 
 # Set up the bot with intents
 intents = discord.Intents.default()
@@ -26,4 +27,4 @@ async def on_message(message):
         # await message.reply("I'm watching you! 👀")
 
 # Run the bot
-client.run('MTQyMzM0OTkwNDE1NTIxNzkyMA.G8q8N6._1qFZgPEWUt3cy34T7qXzzJCehQo27q_QraeX0')
+client.run(os.environ['DISCORD_TOKEN'])
